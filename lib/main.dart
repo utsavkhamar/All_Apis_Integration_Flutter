@@ -1,6 +1,6 @@
-import 'package:api_intigration/get_api_screen.dart';
+// import 'package:api_intigration/get_api_screen.dart';
 import 'package:flutter/material.dart';
-
+import 'get_api_with_custom_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const GetApiHome(),
+      home:
+          GetApiWithCustomModel(), //get api example with custom model withOut plugin
+      // const GetApiHome(), get api first example
     );
   }
 }
